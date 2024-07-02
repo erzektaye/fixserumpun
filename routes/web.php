@@ -10,5 +10,5 @@ Route::get('/welcome', function () {
 Route::get('/', Controllers\HomeController::class);
 
 // Route API Method HTTP
-Route::get('/api/tumbuhan/suhu:{suhu}/kelembapan:{kelembapan}',[Controllers\APIController::class,'monitoring_tumbuhan']);
-Route::get('/api/power/kapasitas:{baterai}/tegangan:{tegangan}/arus{arus}',[Controllers\APIController::class,'monitoring_power']);
+Route::get('/api/get/tanaman',[Controllers\APIController::class,'monitoring_tanaman']);
+Route::get('/api/get/power',[Controllers\APIController::class,'monitoring_power']);

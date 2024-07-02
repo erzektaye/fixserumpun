@@ -22,5 +22,5 @@ class MonitoringTanaman extends Model
      */
     // protected $fillable = ['perusahaan_nama','perusahaan_almt','perusahaan_jenis','pic','tgl_mulai_kp','tgl_selesai_kp'];
 
-    protected $fillable = ['suhu', 'kelembapan', 'waktu']; // Define fillable attributes
+    protected $fillable = ['temp', 'humidity', 'soil', 'waktu']; // Define fillable attributes
 }

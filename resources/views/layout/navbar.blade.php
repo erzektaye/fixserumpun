@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +10,12 @@
         <script src="https://kit.fontawesome.com/669eae9cd0.js" crossorigin="anonymous"></script>
         {{-- Google Font and Icons --}}
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24..48,100..700,0..1,-50..200" />
+        {{-- Scroll Reveal  --}}
+        <script src="https://unpkg.com/scrollreveal"></script>
     </head>
     <body>
         {{-- Navigation Bar --}}
-        <header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white border-b border-gray-200 text-sm py-3 sm:py-0">
+        <header class="header flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white border-b border-gray-200 text-sm py-3 sm:py-0">
             <nav class="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8" aria-label="Global">
                 <div class="flex items-center justify-between">
                     <a class="inline-flex items-center gap-x-3 font-semibold text-sm" href="#">

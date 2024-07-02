@@ -20,7 +20,5 @@ class MonitoringPower extends Model
      *
      * @var array
      */
-    // protected $fillable = ['perusahaan_nama','perusahaan_almt','perusahaan_jenis','pic','tgl_mulai_kp','tgl_selesai_kp'];
-
-    protected $fillable = ['tegangan', 'arus', 'kapasitas', 'waktu']; // Define fillable attributes
+    protected $fillable = ['voltage', 'current', 'power', 'time']; // Define fillable attributes
 }
