@@ -6,32 +6,34 @@
 <section class="py-10" id="beranda">
     <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
-        <div>
-            <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight">Website Penelitian <span class="text-green-600">Monitoring Smart Farming</span> Desa Pandean</h1>
-            <p class="mt-3 text-lg text-gray-800">Penelitian Sistem Smart Farming and Precision Tumbuhan Cabai Berbasis Mikrokontroller dan Internet of Things dengan PLTS disertai Monitoring ecamatan Ngablak, Kabupaten Magelang.</p>
-            <div class="mt-7 grid gap-3 w-full sm:inline-flex">
-            <a class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-green-600 text-white hover:bg-green-700 disabled:opacity-50 disabled:pointer-events-none" href="#monitoring">
-                Pelajari Lebih Lanjut
-                <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-            </a>
+            <div>
+                <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight">Website Penelitian <span class="text-green-600">Monitoring Smart Farming</span> Desa Pandean</h1>
+                <p class="mt-3 text-lg text-gray-800">Penelitian Sistem Smart Farming and Precision Tumbuhan Cabai Berbasis Mikrokontroller dan Internet of Things dengan PLTS disertai Monitoring ecamatan Ngablak, Kabupaten Magelang.</p>
+                <div class="mt-7 grid gap-3 w-full sm:inline-flex">
+                <a class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-green-600 text-white hover:bg-green-700 disabled:opacity-50 disabled:pointer-events-none" href="#monitoring">
+                    Pelajari Lebih Lanjut
+                    <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                </a>
+                </div>
             </div>
-        </div>
-        <div class="relative">
-            <img class="w-full rounded-md" src="media/start.jpg" alt="Image Description">
-            <div class="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 size-full rounded-md mt-4 -mb-4 me-4 -ms-4 lg:mt-6 lg:-mb-6 lg:me-6 lg:-ms-6"></div>
-        </div>
-        </div>
+            <div class="relative">
+                <img class="w-full rounded-md" src="media/start.jpg" alt="Image Description">
+                <div class="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 size-full rounded-md mt-4 -mb-4 me-4 -ms-4 lg:mt-6 lg:-mb-6 lg:me-6 lg:-ms-6"></div>
+            </div>
+            </div>
     </div>
 </section>
 
 {{-- Section Monitoring --}}
 <section class="py-10 text-center" id="monitoring">
-    <h1 class="text-5xl text-gray-800 font-bold lg:text-4xl align-middle">
-        Monitoring Terkini
-    </h1>
-    <p class="mt-1 text-green-500 text-lg">
-        Data Monitoring Tumbuhan Berbasis Internet of Things
-    </p>
+    <div class="max-w-[85rem] px-4 py-3 sm:px-6 lg:px-8 lg:py-7 mx-auto">
+        <h1 class="text-5xl text-gray-800 font-bold lg:text-4xl align-middle">
+            Monitoring Terkini
+        </h1>
+        <p class="mt-1 text-green-500 text-lg">
+            Data Monitoring Tumbuhan Berbasis Internet of Things
+        </p>
+    </div>
     <div class="max-w-[85rem] px-4 py-3 sm:px-6 lg:px-8 lg:py-7 mx-auto">
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             <div class="flex flex-col bg-white border shadow-sm rounded-xl">
@@ -309,12 +311,14 @@
 {{-- Section Team --}}
 <section class="pt-10 pb-10" id="team">
     <div class="text-center">
-        <h1 class=" text-5xl text-gray-800 font-bold lg:text-4xl align-middle">
-            Tim Penelitian
-        </h1>
-        <p class="mt-1 text-green-500 text-lg">
-            Kelompok 767 Hibah MBKM Proyek di Desa
-        </p>
+        <div class="max-w-[85rem] px-4 py-3 sm:px-6 lg:px-8 lg:py-7 mx-auto">
+            <h1 class=" text-5xl text-gray-800 font-bold lg:text-4xl align-middle">
+                Tim Penelitian
+            </h1>
+            <p class="mt-1 text-green-500 text-lg">
+                Kelompok 767 Hibah MBKM Proyek di Desa
+            </p>
+        </div>
         <div class="max-w-[85rem] px-4 py-3 sm:px-6 lg:px-8 lg:py-7 mx-auto">
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                 {{-- <div class="flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-lg transition">
