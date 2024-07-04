@@ -15,7 +15,13 @@ class AdminController extends Controller
     {
         $tanaman = MonitoringTanaman::select('*')->get()->last();
         $power = MonitoringPower::select('*')->get()->last();
-        return view('admin.dashboard',compact('tanaman','power'));
+        $tabpower= MonitoringPower::selectRaw('DATE(created_at) as tanggal, AVG(voltage) as avg_tegangan, AVG(current) as avg_arus, AVG(power) as avg_daya')
+        ->groupBy('tanggal')
+        ->orderBy('tanggal', 'desc')->paginate(10);
+        $tabtanaman = MonitoringTanaman::selectRaw('DATE(created_at) as tanggal, AVG(temp) as avg_suhu, AVG(humidity) as avg_humidity, AVG(soil) as avg_soil')
+        ->groupBy('tanggal')
+        ->orderBy('tanggal', 'desc')->paginate(10);
+        return view('admin.dashboard',compact('tanaman','power','tabtanaman','tabpower'));
     }
 
     /**

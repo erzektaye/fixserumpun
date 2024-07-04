@@ -7,6 +7,8 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         @vite(['resources/js/app.js','resources/css/app.css'])
         <title>@yield('title','Serumpun Ngablak')</title>
+        {{-- Jquery --}}
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         {{-- Font Awesome --}}
         <script src="https://kit.fontawesome.com/669eae9cd0.js" crossorigin="anonymous"></script>
         {{-- Google Font and Icons --}}
@@ -73,7 +75,7 @@
             <nav class="hs-accordion-group p-6 w-full flex flex-col flex-wrap" data-hs-accordion-always-open>
             <ul class="space-y-1.5">
                 <li>
-                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 bg-gray-100 text-sm text-neutral-700 rounded-lg hover:bg-gray-100" href="#">
+                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100" href="{{ route('admin.dashboard.index') }}">
                         <span class="material-symbols-rounded">
                             home
                         </span>
@@ -81,7 +83,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100" href="#">
+                    <a class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100" href="{{ route('admin.tanaman') }}">
                         <span class="material-symbols-rounded">
                             potted_plant
                         </span>
@@ -89,7 +91,7 @@
                     </a>
                     </li>
                 <li>
-                    <a class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100" href="#">
+                    <a class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100" href="{{ route('admin.power') }}">
                         <span class="material-symbols-rounded">
                             charger
                         </span>

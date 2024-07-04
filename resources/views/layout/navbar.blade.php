@@ -6,6 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         @vite(['resources/js/app.js','resources/css/app.css'])
         <title>@yield('title','Serumpun Ngablak')</title>
+        {{-- Jquery --}}
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         {{-- Font Awesome --}}
         <script src="https://kit.fontawesome.com/669eae9cd0.js" crossorigin="anonymous"></script>
         {{-- Google Font and Icons --}}
@@ -39,6 +41,7 @@
                         <a class="py-3 ps-px sm:px-3 font-medium text-gray-500 hover:text-gray-400" href="#penelitian">Penelitian</a>
                         <a class="py-3 ps-px sm:px-3 font-medium text-gray-500 hover:text-gray-400" href="#team">Tim KKN</a>
                     @auth
+                        <a class="py-3 ps-px sm:px-3 font-medium text-gray-500 hover:text-gray-400" href="admin/dashboard">Dashboard</a>
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
                             <a class="flex items-center gap-x-2 font-medium text-gray-500 hover:text-green-500 sm:border-s sm:border-gray-300 py-2 sm:py-0 sm:ms-4 sm:my-6 sm:ps-6"
